@@ -1,33 +1,18 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import type { Metadata } from 'next'
 import './globals.css'
-
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Cluster - Unique Design & Digital Experiences',
-  description: 'Creative designer crafting unique, bespoke digital experiences that bring brands to life with purpose and precision',
-  generator: 'v0.app',
+  description: 'Creative designer crafting unique, bespoke digital experiences',
+  
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/cluster_logo.png' }, 
     ],
-    apple: '/apple-icon.png',
+    apple: '/cluster_logo.png',
   },
-}
+};
 
 export default function RootLayout({
   children,
