@@ -2,6 +2,9 @@
 
 import Link from 'next/link'
 import { Mail, Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import Image from 'next/image'
+
+import cluster_logo from '../public/cluster_logo.png'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -21,8 +24,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="#home" onClick={() => scrollToSection('home')} className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary-foreground rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">RK</span>
+              <div className="w-8 h-8  rounded-lg flex items-center justify-center">
+                 <span className="">
+                <Image src={cluster_logo} alt="" />
+              </span>
               </div>
               <span className="font-bold text-lg">Cluster</span>
             </Link>
